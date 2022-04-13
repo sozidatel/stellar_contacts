@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Stellar Contacts",
+  "version": "0.4.0",
+  "description": "Добавить имён к айдишникам на разных сайтах.",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://stellar.expert/*",
+        "https://mtl.ergvein.net/*",
+        "https://ncrashed.github.io/*",
+        "https://github.com/montelibero-org/*",
+        "https://laboratory.stellar.org/*"
+      ],
+      "js": [
+        "jquery-3.6.0.slim.min.js",
+        "app.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "action": {
+    "default_icon": "icons/128.png"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions":
+  [
+    "https://stellar.expert/*",
+    "https://api.stellar.expert/*",
+    "https://mtl.ergvein.net/*",
+    "https://ncrashed.github.io/*",
+    "https://github.com/montelibero-org/*",
+    "https://laboratory.stellar.org/*"
+  ]
+}
