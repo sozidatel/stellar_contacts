@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Stellar Contacts",
-  "version": "0.4.0",
-  "description": "Добавить имён к айдишникам на разных сайтах.",
+  "version": "0.4.1",
+  "description": "Add some human readable names instead of abrakadabra Stellar ID's.",
   "icons": {
     "16": "icons/16.png",
     "48": "icons/48.png",

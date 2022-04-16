@@ -1,12 +1,14 @@
 function stellarContactsGo() {
-    const reg = /G[A-Z2-7]{55}/;
-
-    let contacts;
     chrome.storage.sync.get({
         contacts: '{}'
-    }, function(items) {
-        contacts = JSON.parse(items.contacts.replace(/^\s+\/\/.*\n/gm, ''));
+    }, function (items) {
+        const contacts = JSON.parse(items.contacts.replace(/^\s+\/\/.*\n/gm, ''));
+        stellarContactsAction(contacts);
     });
+}
+
+function stellarContactsAction(contacts) {
+    const reg = /G[A-Z2-7]{55}/;
 
     if (location.host === "stellar.expert") {
         jQuery('.account-address').each(function () {
