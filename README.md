@@ -1,7 +1,7 @@
 Stellar Contacts
 =
 
-This is Chrome extension to replace Stellar addresses by names from your contact book.
+This is [Chrome extension](https://chrome.google.com/webstore/detail/stellar-contacts/doomgdeiidbenpimgnbfngkhkjgmjjbc) to replace Stellar addresses by names from your contact book.
 
 Mainly, the extension was built for Stellar blockchain explorer https://stellar.expert
 
